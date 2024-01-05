@@ -1,0 +1,58 @@
+{
+    // start lint settings
+    "editor.formatOnSave": true,
+    // turn it off for JS and JSX, we will do this via eslint
+    "[vue]": {
+        "editor.formatOnSave": false,
+    },
+    "[scss]": {
+        "editor.formatOnSave": true
+    },
+    "eslint.options": {
+        "extensions": [
+            ".html",
+            ".js",
+            ".ts",
+            ".vue"
+        ]
+    },
+    "eslint.validate": [
+        "html",
+        "vue",
+        "javascript",
+        "typescript"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.stylelint": "explicit"
+    },
+    "files.eol": "\n",
+    "stylelint.validate": [
+        "css",
+        "less",
+        "scss",
+        "postcss",
+    ],
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.ts",
+        "**/*.html",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.php",
+        "**/*.md",
+        "**/*.vue"
+    ],
+    "css.customData": [
+        ".vscode/tailwind.json"
+    ],
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "JetBrains Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "tailwindCSS.emmetCompletions": true,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "prettier.semi": false
+}

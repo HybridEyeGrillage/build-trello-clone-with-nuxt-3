@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "formulahendry.auto-rename-tag",
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "jgclark.vscode-todo-highlight",
+    "vue.vscode-typescript-vue-plugin",
+    "sdras.vue-vscode-snippets",
+    "wscats.vue",
+    "pflannery.vscode-versionlens",
+    "xabikos.javascriptsnippets",
+    "graphql.vscode-graphql"
+  ]
+}
