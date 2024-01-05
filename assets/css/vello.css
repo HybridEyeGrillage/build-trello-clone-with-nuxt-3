@@ -1,5 +1,5 @@
 .board {
-  @apply flex flex-row items-start;
+  @apply p-6 flex flex-row items-start;
 }
 
 .board-wrapper {

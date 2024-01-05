@@ -18,13 +18,19 @@
         </UCard>
       </li>
     </ul>
+    <UInput
+      v-model="newTaskName"
+      type="text"
+      icon="i-heroicons-plus-circle-solid"
+      @keyup.enter="addTask"
+    />
   </UContainer>
 </template>
 
 <script setup lang="ts">
 import { useBoardStore } from "~/stores/boardStore";
 
-defineProps({
+const props = defineProps({
   column: {
     type: Object,
     required: true,
@@ -35,7 +41,16 @@ defineProps({
   },
 })
 const editNameState = ref(false)
+const newTaskName = ref('')
 const router = useRouter()
+
+function addTask() {
+  useBoardStore().addTask(
+    props.columnIndex,
+    newTaskName.value
+  );
+  newTaskName.value = "";
+}
 
 function deleteColumn(columnIndex: number) {
   useBoardStore().deleteColumn(columnIndex)
